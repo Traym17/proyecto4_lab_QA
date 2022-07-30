@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Main">
+    <test name="Test de bienes raices">
+        <parameter name="navegador" value="Chrome"></parameter>
+        <parameter name="url" value="https://www.bnventadebienes.com/Home/HomeFilter"></parameter>
+        <classes>
+            <class name="Casos">
+                <methods>
+                    <include name="DropSanJose"></include>
+                    <include name="DropAlajuela"></include>
+                    <include name="DropCartago"></include>
+                    <include name="DropHeredia"></include>
+                    <include name="DropGuanacaste"></include>
+                    <include name="DropPuntarenas"></include>
+                    <include name="DropLimon"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
